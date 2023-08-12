@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link href="style.E-commerce.css" rel="stylesheet" />
+    <title>E-commerce</title>
+</head>
+
+<body>
+
+    <div class="container-fluid fluid-1">
+        <!--navbar-->
+        <nav class="navbar navbar-expand-lg bg-transparent mb-5 ">
+            <div class="container-fluid ps-0 pe-0">
+                <a class="navbar-brand" href="#">Ba<span>chira</span> </a>
+                <div class="mb-0 d-block d-lg-none ms-auto me-4">
+                    <a class="login" href="#">Login</a>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler"
+                    aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse mt-2 mt-lg-0 p-3 p-lg-0 rounded-3 " id="navbarToggler">
+                    <ul class="navbar-nav m-auto mt-0  mb-3 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active p-0" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link p-0" href="#">Products</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link p-0" href="#">Categories</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link p-0" href="#">Brands</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link p-0" href="#">Pricing</a>
+                        </li>
+                    </ul>
+                    <div class="d-block  d-lg-flex align-items-center justify-content-center  gap-4">
+                        <div class="mb-3 mb-lg-0 d-none d-lg-block">
+                            <a class="login" href="#">Login</a>
+                        </div>
+
+                        <button type="button" class="btn btn-1">Register</button>
+                    </div>
+                </div>
+
+            </div>
+        </nav>
+        <!--end navbar-->
+
+        <!--section-1-->
+        <section class="section-1">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12 col-lg-5">
+                        <div class="left-box ">
+                            <h1 class="text-center text-md-start">Best Place to Buy <span>Everything.</span></h1>
+                            <p class="shop text-center text-md-start">At Bachira, you can shop for all your favorite
+                                beauty brands, clothes,
+                                household products and more at a single place.</p>
+                            <button type="button" class="btn btn-2">Shopping Now</button>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-7">
+                        <div class="right-box d-none d-lg-block">
+                            <img src="./images/image-1.svg" class="image-1">
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="breands d-flex flex-column align-items-center">
+                            <div class="col-12 col-md-6 d-flex justify-content-center">
+                                <h6>We Collaborate With 250++ Leading Top E Commerce and Brands</h6>
+                            </div>
+                            <div
+                                class="brends-image w-100 d-block d-md-flex align-items-center  justify-content-between">
+                                <a href="#"><img src="./images/Tokopedia svg.svg" alt=""></a>
+                                <a href="#"><img src="./images/Balenciaga svg.svg" alt=""></a>
+                                <a href="#"><img src="./images/adidas svg.svg" alt=""></a>
+                                <a href="#"><img src="./images/gucci svg.svg" alt=""></a>
+                                <a href="#"><img src="./images/Bukalapak svg.svg" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end section-1-->
+        <!--section-2-->
+        <section class="section-2">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12 col-md-4 pe-0 ">
+                        <h3 class="store text-center text-md-start">Browse Categories of The Store</h3>
+                    </div>
+                </div>
+                <div class="row gy-4 gy-lg-0">
+                    <div class="col-12 col-md-5">
+                        <div class="d-flex flex-column gap-4 h-100">
+                            <div class="image-1-1 position-relative">
+                                <a href="#"><img src="./images/image-2-1.png" class="w-100" style="height:181px;"></a>
+                                <div class="Categories-1 position-absolute ">
+                                    <h6>Fashion</h6>
+                                    <p>30,000 items</p>
+                                </div>
+                            </div>
+                            <div class="image-1-2 position-relative">
+                                <a href="#"><img class="w-100" src="./images/image-2-2.png" alt=""
+                                        style="height:181px;"></a>
+                                <div class="Categories-2 position-absolute">
+                                    <h6>Skincare</h6>
+                                    <p>2,000 items</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-3 position-relative">
+                        <a href="#"> <img class="w-100 h-100" src="./images/image-3.png" alt=""
+                                style="height:386px;"></a>
+                        <div class="Categories-3 position-absolute">
+                            <h6>Shoes</h6>
+                            <p>10,000 items</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 position-relative">
+                        <a href="#"> <img class="w-100" src="./images/image-4.png" alt="" style="height:386px;"></a>
+                        <div class="Categories-4 position-absolute">
+                            <h6>Electronic</h6>
+                            <p>10,000 items</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end section-2-->
+
+        <!--section-3-->
+        <section class="section-3">
+            <div class="row">
+                <div class="col-12">
+                    <div class="text-center">
+                        <h4>Why Choose Ba<span>chira</span>?</h4>
+                    </div>
+                </div>
+                <div class="row row-1 justify-content-center" style="gap:100px;">
+                    <div class="col-12 col-lg-3">
+                        <div class="delivery text-center">
+                            <a href="#"><img src="./images/Icon-1.svg" alt="" style="margin-bottom: 20px;"></a>
+                            <h6>Free Delivery</h6>
+                            <div class="text-center">
+                                <p>Lorem ipsum dolor sit amet, consectetu
+                                    adipiscing elit, sed do eiusmod tempor</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-3">
+                        <div class="delivery text-center">
+                            <a href="#"><img src="./images/Icon-2.svg" alt="" style="margin-bottom: 20px;"></a>
+                            <h6>Trusted Platfrom</h6>
+                            <div class="text-center">
+                                <p>Lorem ipsum dolor sit amet, consectetu
+                                    adipiscing elit, sed do eiusmod tempor</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-3">
+                        <div class="delivery text-center">
+                            <a href="#"><img src="./images/Icon-3.svg" alt="" style="margin-bottom: 20px;"></a>
+                            <h6>Here For You</h6>
+                            <div class="text-center">
+                                <p>Lorem ipsum dolor sit amet, consectetu
+                                    adipiscing elit, sed do eiusmod tempor</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--end section-3-->
+
+        <!--section-4-->
+        <section class="section-4">
+            <div class="row">
+                <div class="col-12 col-md-4">
+                    <h3 class="store text-center text-md-start">Browse Categories of The Store</h3>
+                </div>
+            </div>
+            <div class="row gy-3 gy-lg-0" id="aidi">
+            </div>
+        </section>
+        <!--end section-4-->
+
+        <!--section-5- footer-->
+        <section class="section-5 footer">
+            <div class="row justify-content-between gy-3 gy-lg-0">
+                <div class="col-12 col-lg-4">
+                    <div class="foot-box">
+                        <h5 class="text-center text-lg-start">Ba<span>chira</span></h5>
+                        <p class="store-desc text-center text-lg-start">Bachira is an online store dealing with all
+                            product
+                            Bachira provide cheap, high quality, products to
+                            customers</p>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-2">
+                    <div class="foot-box">
+                        <h6>For Beginner</h6>
+                        <a href="">
+                            <p>About</p>
+                        </a>
+                        <a href="">
+                            <p>Career</p>
+                        </a>
+                        <a href="">
+                            <p>Promotion</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-2">
+                    <div class="foot-box">
+                        <h6>Overview</h6>
+                        <a href="">
+                            <p>Product</p>
+                        </a>
+                        <a href="">
+                            <p>Categories</p>
+                        </a>
+                        <a href="">
+                            <p>Pricing</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-2">
+                    <div class="foot-box">
+                        <h6>Explore Us</h6>
+                        <a href="">
+                            <p>Our Career</p>
+                        </a>
+                        <a href="">
+                            <p>Privacy</p>
+                        </a>
+                        <a href="">
+                            <p>Terms & Conditions</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-2">
+                    <div class="foot-box">
+                        <h6>Connect Us</h6>
+                        <a href="">
+                            <p>support@bachira.com</p>
+                        </a>
+                        <a href="">
+                            <p>021 - 555 -456</p>
+                        </a>
+                        <a href="">
+                            <p>Sudirman, South Jakarta</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 text-center mt-5">
+                    <a href="#" class="copyright  ">Copyright 2023 • All Rights Reserved Bachira by Giatinaja</a>
+                </div>
+            </div>
+        </section>
+        <!--end section-5-footer-->
+       
+
+    </div><!--end fluid-1-->
+
+
+
+
+
+
+    <script src="app.E-commerce.js"></script>
+</body>
+
+</html>
